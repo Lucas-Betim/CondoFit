@@ -1,2 +1,2 @@
 # CondoFit
-Projeto finbal ENG de Software
+Projeto final ENG de Software
