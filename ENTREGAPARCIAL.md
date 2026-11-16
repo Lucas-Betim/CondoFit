@@ -3,7 +3,7 @@
 | #   | Entregável                    | Arquivo |
 |-----|-------------------------------|---------|
 | E1  | Equipe, tema e escopo         | [README.md](README.md) |
-| E2  | Índice dos entregáveis        | [ENTREGAPARCIAL.md](ENTREGAPARCIAL01.md) |
+| E2  | Índice dos entregáveis        | Este arquivo |
 | E3  | Spec (RF/RNF)                 | [specs/requisitos.md](specs/requisitos.md) |
 | E4  | Mini-spec do ticket vago      | [specs/mini-spec.md](specs/mini-spec.md) |
 | E5  | Histórias e backlog           | [specs/backlog.md](specs/backlog.md) |
