@@ -2,8 +2,6 @@
 
 Autor: Lucas - Arquiteto técnico. Status: **Aprovadas em 16/11/2026**.
 
-Elaborei estas histórias com apoio de IA (Codex).
-
 Utilizo os identificadores HU-ARQ para relacionar cada história aos fluxos, às regras de negócio e aos requisitos não funcionais de arquitetura. Este documento descreve as histórias; a priorização pertence ao backlog.
 
 ## HU-ARQ-01 - Reservar a academia
