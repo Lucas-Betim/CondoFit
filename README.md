@@ -1,2 +1,6 @@
 # CondoFit
-Projeto finbal ENG de Software
+Projeto de Engenharia de Software.
+
+## Planejamento - Arquitetura e agentes
+
+[Documentação de arquitetura e agentes](docs/entrega-arquiteto.md): decisões aprovadas, diagrama, requisitos de arquitetura, histórias e configuração dos agentes Codex.

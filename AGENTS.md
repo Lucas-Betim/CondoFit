@@ -2,7 +2,7 @@
 
 ## Objetivo e fase
 
-Backend de reservas da academia de condomínio com Python, FastAPI e PostgreSQL. Nesta entrega parcial, produzir e revisar planejamento; não iniciar implementação automaticamente. O ADR-001 está proposto e precisa de revisão humana antes de orientar código integrado.
+Backend de reservas da academia de condomínio com Python, FastAPI e PostgreSQL. Nesta entrega parcial, produzir e revisar planejamento; não iniciar implementação automaticamente. O ADR-001 está aceito desde 16/11/2026. Mudanças nessa decisão exigem nova revisão humana.
 
 Leia a história aprovada, a spec, o backlog, `docs/adr/ADR-001-arquitetura.md`, `docs/arquitetura.md` e o plano de testes antes de implementar. Se o documento obrigatório não existir ou a regra estiver ambígua, explique o impedimento; não invente requisitos.
 
@@ -26,7 +26,7 @@ Não expor credenciais, dados pessoais ou segredos em arquivos, mensagens, logs 
 
 ## Comandos previstos para a implementação
 
-Ainda não há aplicação, configuração de dependências ou CI: os comandos abaixo são a convenção proposta a implementar posteriormente. Não afirmar que funcionam ou que passaram nesta entrega de documentação.
+Ainda não há aplicação, configuração de dependências ou CI: os comandos abaixo são a convenção adotada para a futura implementação. Não afirmar que funcionam ou que passaram nesta entrega de documentação.
 
 | Finalidade | Comando previsto |
 | --- | --- |
@@ -35,15 +35,15 @@ Ainda não há aplicação, configuração de dependências ou CI: os comandos a
 | Lint | `python -m ruff check .` |
 | Execução local | `python -m uvicorn app.main:app --reload` |
 
-O primeiro comando compila bytecode; não gera um pacote de distribuição. Antes de implementar, a equipe deve configurar dependências e ambiente de teste no README e no projeto. Os testes de integração devem usar PostgreSQL de teste. O CI deverá executar testes e lint antes de integrar; uma checagem ausente não equivale a aprovação.
+O primeiro comando compila bytecode; não gera um pacote de distribuição. Os comandos exigem as dependências e o ambiente de teste da implementação. Os testes de integração usam PostgreSQL de teste. O CI executará testes e lint antes da integração; uma checagem ausente não equivale a aprovação.
 
 ## Critério de conclusão e responsabilidade
 
 Uma história por sessão, com critérios definidos por pessoas. Para o item escolhido para TDD, registrar a falha esperada antes de implementar, então implementar e refatorar com testes passando. Ao concluir, informar mudanças, critérios atendidos, comandos e resultados reais, limitações e uso de IA.
 
-Regra proposta do grupo: quem aprova e integra o PR assume a responsabilidade pelo código integrado, após revisão humana; agentes fornecem propostas e pareceres, sem aprovar ou realizar merges.
+Responsabilidade pelo código integrado: quem aprova e integra o PR assume a responsabilidade pelo código integrado, após revisão humana; agentes sugerem alterações e emitem pareceres, sem aprovar ou realizar merges.
 
-O grupo deve ratificar essa regra e identificar o responsável em cada PR. Não fazer commit, push, merge, deploy ou chamadas reais de e-mail sem solicitação explícita. A documentação será integrada posteriormente na branch `entrega-parcial-01` pelo fluxo acordado pelo grupo.
+O responsável humano deve ser identificado em cada PR. Não fazer commit, push, merge, deploy ou chamadas reais de e-mail sem solicitação explícita. A branch de entrega é `entrega-parcial-01`.
 
 ## Agentes do projeto
 
