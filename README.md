@@ -1,5 +1,7 @@
 # CondoFit
-Projeto de Engenharia de Software.
+# CondoFit
+
+Projeto final ENG de Software.
 
 ## Planejamento - Arquitetura e agentes
 
