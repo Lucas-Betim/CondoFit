@@ -12,21 +12,14 @@ Fluxo principal: o morador identificado visualiza data e horário livres. O sist
 
 Fluxos alternativos: Não há fluxo alternativo pois o morador está apenas visualizando os horários e datas disponíveis.
 
-Referências: RN-ARQ-01, RN-ARQ-02, RN-ARQ-04, RN-ARQ-05 e RN-ARQ-06 em [arquitetura](../docs/arquitetura.md); RNF-ARQ-02 em [ADR-001](../docs/adr/ADR-001-arquitetura.md).
+Referências: RN-ARQ-01, RN-ARQ-02, RN-ARQ-04 e RN-ARQ-06 em [arquitetura](../docs/arquitetura.md).
 
 ## HU-ARQ-04 - Consultar minhas reservas
 
 Como morador, quero visualizar minhas reservas futuras e anteriores para acompanhar meus agendamentos.
 
-Fluxo principal: o morador identificado consulta a reserva de seu apartamento e solicita cancelamento; o sistema verifica autorização e condições aprovadas na spec; altera a reserva para cancelada e mantém o histórico; uma nova reserva para o mesmo dia passa a ser permitida, se cumprir as demais regras.
+Fluxo principal: o morador identificado consulta as reservas de seu apartamento; o sistema verifica mostra os agendamentos aprovadas mantidas no histórico.
 
-Fluxos alternativos: tentativa de cancelar reserva de outro apartamento é recusada sem alteração; reserva inexistente produz resposta de não encontrada; repetir cancelamento não apaga o histórico nem cria outra reserva. O cancelamento respeita as condições de agendamento, sem alterar a duração ou o limite diário das reservas.
+Fluxos alternativos: Não há fluxo alternativo pois o morador está apenas visualizando os horários e datas agendados anteriormente.
 
-Critérios de aceitação:
-
-1. Cancelar uma reserva autorizada preserva o registro como cancelado e libera o limite do apartamento após a confirmação da transação.
-2. Após cancelar, criar outra reserva válida para o mesmo dia resulta em uma única reserva ativa e mantém a cancelada no histórico.
-3. Tentativa de cancelar reserva de outro apartamento não altera nenhuma reserva.
-4. Os testes unitários desse serviço executam sem PostgreSQL e sem envio real de e-mail; a liberação do limite também é verificada em integração com PostgreSQL.
-
-Referências: RN-ARQ-01 e RN-ARQ-03 e regra de autorização em [arquitetura](../docs/arquitetura.md); RNF-ARQ-01 em [ADR-001](../docs/adr/ADR-001-arquitetura.md).
+Referências: RN-ARQ-03 e RN-ARQ-05 em [arquitetura](../docs/arquitetura.md).
