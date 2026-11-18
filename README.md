@@ -1,6 +1,6 @@
 # CondoFit
 Projeto final ENG de Software
-## Definição de Pronto (DoD)
+## Definição de Pronto
 Uma funcionalidade será considerada pronta quando atender a todos os seguintes critérios:
 1.	Todos os critérios de aceitação da história correspondente foram atendidos.
 2.	Os testes automatizados relacionados à funcionalidade foram executados e aprovados.
