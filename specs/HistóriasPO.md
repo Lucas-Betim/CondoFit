@@ -54,7 +54,7 @@ Critérios de aceitação:
 4. Quando não houver reservas para a data, informar que não foram encontrados agendamentos.
 5. A consulta não deve alterar, criar ou cancelar reservas.
 
-**Referências: RN-ARQ-05 e modelo conceitual de Reserva em arquitetura; operações de consulta na camada de serviços e dados em ADR-001
+**Referências:** RN-ARQ-05 e modelo conceitual de Reserva em arquitetura; operações de consulta na camada de serviços e dados em ADR-001
 
 ---
 
@@ -72,4 +72,4 @@ Critérios de aceitação:
 4. Informar ao administrador quando já existirem reservas no período solicitado, sem cancelá-las automaticamente.
 5. Permitir consultar os bloqueios registrados, identificando suas datas, horários e motivos.
 
-**Referências: funcionalidade proposta a partir das referências visuais de sistemas de gestão e agendamento enviadas (Field Control, Trengo e Fitness Booking). A arquitetura atual não define bloqueios de manutenção; a regra precisa ser incorporada à especificação de negócio e validada pelo arquiteto.
+**Referências:** Funcionalidade proposta a partir das referências visuais de sistemas de gestão e agendamento enviadas (Field Control, Trengo e Fitness Booking). A arquitetura atual não define bloqueios de manutenção; a regra precisa ser incorporada à especificação de negócio e validada pelo arquiteto.
