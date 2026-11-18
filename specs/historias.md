@@ -28,7 +28,7 @@ Caso não existam horários disponíveis, o sistema deve informar essa condiçã
 
 A consulta não deve criar, alterar ou cancelar reservas.
 
-Referências: RN-ARQ-01, RN-ARQ-02, RN-ARQ-04 e RN-ARQ-06 em arquitetura.
+Referências: RN-ARQ-01, RN-ARQ-02, RN-ARQ-04 e RN-ARQ-06 em [arquitetura](../docs/arquitetura.md).
 
 ## HU-ARQ-04 - Consultar minhas reservas
 
