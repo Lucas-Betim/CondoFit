@@ -37,3 +37,37 @@ Como morador do condomínio, quero cancelar uma reserva ativa que fiz anteriorme
 5. Solicitar confirmação antes de efetivar o cancelamento.
 
 **Referências:** RF-02, requisito de integridade histórica (RN-ARQ-05) e fluxo de consulta administrativa por data.
+
+---
+
+## HU-ARQ-07 - Consultar reservas por data
+Como administrador do condomínio, quero consultar as reservas da academia por data para acompanhar a utilização do espaço.
+
+Fluxo principal: o administrador informa a data desejada; o sistema consulta as reservas registradas para aquele dia e apresenta os horários reservados, os apartamentos correspondentes e a situação de cada reserva.
+
+Fluxos alternativos: se não houver reservas para a data selecionada, o sistema informa que não existem agendamentos. Se a data informada for inválida, o sistema solicita uma entrada válida. Reservas canceladas devem permanecer identificáveis no histórico, sem serem apresentadas como reservas ativas.
+
+Critérios de aceitação:
+1. Ao informar uma data válida, retornar as reservas correspondentes àquele dia.
+2. Apresentar, para cada reserva, o horário de início, o horário de término, o apartamento e a situação (ativa ou cancelada).
+3. Não apresentar reservas de outras datas na consulta.
+4. Quando não houver reservas para a data, informar que não foram encontrados agendamentos.
+5. A consulta não deve alterar, criar ou cancelar reservas.
+Referências: RN-ARQ-05 e modelo conceitual de Reserva em arquitetura; operações de consulta na camada de serviços e dados em ADR-001
+
+---
+
+## HU-ARQ-08 -Bloquear horários para manutenção
+Como administrador do condomínio, quero bloquear horários ou datas da academia para manutenção para impedir agendamentos durante períodos em que o espaço não estiver disponível.
+
+Fluxo principal: o administrador informa a data e o período em que a academia ficará indisponível, além do motivo do bloqueio. O sistema registra o bloqueio e passa a considerar aquele período indisponível para novas reservas.
+
+Fluxos alternativos: se os dados informados forem inválidos, o sistema solicita a correção. Se já houver reservas no período solicitado, o sistema informa o conflito e não deve cancelar essas reservas automaticamente. Se o administrador tentar bloquear um período que já esteja bloqueado, o sistema informa a situação para evitar registros duplicados.
+
+Critérios de aceitação:
+1. Permitir que o administrador registre um bloqueio informando data, horário inicial, horário final e motivo.
+2. Não permitir o registro de bloqueios com datas ou horários inválidos, nem com horário final anterior ou igual ao inicial.
+3. Impedir a criação de novas reservas que coincidam com um período bloqueado.
+4. Informar ao administrador quando já existirem reservas no período solicitado, sem cancelá-las automaticamente.
+5. Permitir consultar os bloqueios registrados, identificando suas datas, horários e motivos.
+Referências: funcionalidade proposta a partir das referências visuais de sistemas de gestão e agendamento enviadas (Field Control, Trengo e Fitness Booking). A arquitetura atual não define bloqueios de manutenção; a regra precisa ser incorporada à especificação de negócio e validada pelo arquiteto.
