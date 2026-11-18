@@ -54,7 +54,7 @@ Critérios de aceitação:
 4. Quando não houver reservas para a data, informar que não foram encontrados agendamentos.
 5. A consulta não deve alterar, criar ou cancelar reservas.
 
-**Referências:** RN-ARQ-05 e modelo conceitual de Reserva em [arquitetura](../docs/arquitetura.md); operações de consulta na camada de serviços e dados em ADR-001
+**Referências:** RN-ARQ-05 e modelo conceitual de Reserva em [arquitetura](docs/arquitetura.md); operações de consulta na camada de serviços e dados em ADR-001
 
 ---
 
