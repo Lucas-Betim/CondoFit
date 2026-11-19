@@ -1,6 +1,6 @@
 # Backlog do Produto — CondoFit
 
-Autora: Gabriela - Product Owner  
+Autores: Gabriela, Lucas Claro - Product Owner  
 Última atualização: 18/11/2026
 
 **Nota de planejamento:** Os itens abaixo estão ordenados por prioridade de entrega de valor (1 = maior prioridade). Conforme definição do ciclo atual, não há estimativa em horas nesta etapa.
