@@ -27,7 +27,7 @@ A situação de dez tentativas simultâneas será verificada separadamente por t
 
 ## 5. Registro dos resultados
 
-Os resultados das execuções serão documentados em `docs/resultados-testes.md`.
+Os resultados das execuções serão documentados em `docs/resultados-teste.md`.
 
 Para cada teste, serão registrados a história ou requisito relacionado, o cenário, o resultado esperado, o resultado obtido, a situação (aprovado ou reprovado), a data da execução e eventuais observações.
 
