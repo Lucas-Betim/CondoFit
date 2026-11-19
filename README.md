@@ -10,6 +10,7 @@ Sistema de reserva da academia de um condomínio.
 | Rafael Schultz Drzevieski | @Schultz126 | Scrum Master | Facilita o processo, acompanha os prazos e organiza a entrega |
 | Lucas Betim Nobre de Oliveira | @Lucas-Betim | Arquiteto técnico | Familiaridade com agentes de IA e banco de dados; assinatura Plus do Codex |
 | Lavínia Borges da Silva | @Lavinia-tech | Qualidade / testes | Responsável pelos critérios de aceitação, pelos testes e pela revisão da qualidade |
+| Lucas Claro de Melo Almeida | @Lucasclaro267 | ... | ...|
 
 ### Justificativa dos papéis
 
