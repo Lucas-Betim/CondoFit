@@ -32,13 +32,24 @@ Referências: RN-ARQ-01, RN-ARQ-02, RN-ARQ-04 e RN-ARQ-06 em [arquitetura](../do
 
 ## HU-ARQ-04 - Consultar minhas reservas
 
-Como morador, quero visualizar minhas reservas futuras e anteriores para acompanhar meus agendamentos.
+Como morador, quero visualizar as reservas futuras e anteriores do meu apartamento para acompanhar meus agendamentos e consultar seu histórico.
 
-Fluxo principal: o morador identificado consulta as reservas de seu apartamento; o sistema verifica mostra os agendamentos aprovadas mantidas no histórico.
+Fluxo principal: o morador identificado solicita a consulta de suas reservas; o sistema busca as reservas vinculadas ao apartamento do morador e apresenta os agendamentos futuros e anteriores, incluindo suas respectivas datas, horários e situações.
 
-Fluxos alternativos: Não há fluxo alternativo pois o morador está apenas visualizando os horários e datas agendados anteriormente.
+Fluxos alternativos:
+
+Se o apartamento não possuir reservas, o sistema deve informar que não há agendamentos registrados.
+
+Se o usuário não estiver identificado ou não possuir uma conta válida, o sistema deve impedir a consulta.
 
 Critérios de aceitação:
-1. A conta do usuário precisas existir para que ele faça a consulta.
+
+Somente usuários com conta existente e identificados no sistema podem consultar suas reservas.
+
+O sistema deve apresentar somente as reservas vinculadas ao apartamento do morador identificado, sem exibir reservas de outros apartamentos.
+
+A consulta deve apresentar as reservas futuras e anteriores, identificando corretamente sua situação, como ativa ou cancelada.
+
+Caso não existam reservas vinculadas ao apartamento, o sistema deve informar essa condição.
 
 Referências: RN-ARQ-03 e RN-ARQ-05 em [arquitetura](../docs/arquitetura.md).
