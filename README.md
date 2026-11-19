@@ -1,6 +1,11 @@
 # CondoFit
 
-Sistema de reserva da academia de um condomínio.
+Projeto final de Engenharia de Software.
+
+## Documentação
+
+- [Plano de Testes](docs/plano-de-teste.md)
+- [Backlog do Projeto](specs/backlog.md)
 
 ## Equipe
 
@@ -43,11 +48,14 @@ O grupo cobre as quatro frentes: negociar com o cliente (Gabriela e Lucas Claro)
 
 **Linguagem:** Python (FastAPI).
 
-## Definição de pronto
+## Definição de Pronto
 
-1. Testes automatizados e lint passam no CI.
-2. O código foi revisado e aprovado por um integrante que não é o autor do PR.
-3. Os critérios de aceitação da história foram verificados.
-4. Regras de arquitetura do ADR-001 foram respeitadas.
-5. Spec, documentação e testes afetados foram atualizados.
-6. O uso de IA, se houve, está registrado na descrição do PR.
+Uma funcionalidade será considerada pronta quando atender a todos os seguintes critérios:
+
+1. Todos os critérios de aceitação da história correspondente foram atendidos.
+2. Os testes automatizados relacionados à funcionalidade foram executados e aprovados.
+3. O código passou pelas verificações de lint e build no CI.
+4. O Pull Request foi revisado e aprovado por pelo menos um integrante diferente do autor.
+5. A implementação respeita a arquitetura e os padrões definidos no ADR.
+6. A documentação, as especificações e os testes relacionados à funcionalidade foram atualizados, quando necessário.
+7. O uso de ferramentas de IA durante o desenvolvimento foi registrado no documento de registro de uso de IA e, quando aplicável, na descrição do Pull Request.
