@@ -8,4 +8,4 @@
 | | 3. Os testes unitários do serviço devem executar sem conexão real com PostgreSQL e sem envio real de e-mail. | Não funcional (testabilidade) | Sim |
 | **HU-ARQ-03 — Consultar horários disponíveis** | 1. Somente usuários com conta existente e identificados no sistema podem consultar os horários disponíveis. | Funcional | Sim |
 | | 2. Ao informar uma data inválida, o sistema deve recusar a consulta e informar que é necessário fornecer uma data válida. | Funcional | Sim |
-| | 3. Ao consultar uma data válida, o sistema deve apresentar somente os horários permitidos e disponíveis. Caso não existam horários disponíveis, deve informar essa condição, sem criar, alterar ou cancelar reservas. | Funcional | Sim |
+| | 3. Ao consultar uma data válida, o sistema deve indicar os horários em que o apartamento do morador pode realizar uma reserva, sem considerar a ocupação por outros apartamentos como impedimento. | Funcional | Sim |
