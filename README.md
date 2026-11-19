@@ -19,6 +19,18 @@ Sistema de reserva da academia de um condomínio.
 - **Arquiteto técnico:** Lucas Betim é o membro mais familiarizado com agentes de IA e banco de dados e tem assinatura Plus do Codex, o que o torna a melhor escolha para as decisões técnicas críticas.
 - **Qualidade e testes:** Cuida de que os critérios de aceitação sejam verificáveis e de que os testes validem as regras de reserva e cancelamento.
 
+## Aprovação, integração e responsabilidade
+
+| Pergunta | Regra |
+|----------|-------|
+| **Quem aprova?** | Um integrante da equipe que **não seja o autor** do PR. Para mudanças em arquitetura ou ADR, a aprovação inclui o arquiteto técnico (Lucas Betim). Para mudanças em requisitos, histórias ou backlog, inclui o Product Owner (Gabriela). |
+| **Quem integra?** | O **autor do PR** faz o merge na `main`, somente depois da aprovação e com o CI passando. |
+| **Quem responde pelo código integrado?** | O **autor humano do PR**, mesmo que o código tenha sido gerado com ajuda de IA. O revisor responde pela qualidade da sua revisão. |
+
+Agentes de IA (Codex) não aprovam, não integram e não respondem por código: eles não fazem commit, push nem merge, e todo código gerado passa por revisão humana antes de entrar.
+
+Antes de integrar, o autor deve conseguir explicar a mudança e os testes sem ajuda de IA.
+
 ### Cobertura das habilidades
 
 O grupo cobre as quatro frentes: negociar com o cliente (Gabriela e Lucas Claro), programar e decidir a arquitetura (Lucas Betim), testar (Lavínia) e documentar (Rafael).
