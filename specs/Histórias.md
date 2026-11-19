@@ -1,6 +1,6 @@
 # Histórias de usuário - Product Owner
 
-Autora: Gabriela - Product Owner. Status: **Aprovadas em 18/11/2026**.
+Autores: Gabriela, Lucas Claro - Product Owner. Status: **Aprovadas em 18/11/2026**.
 
 ## HU-PO-01: Reservar horário na academia
 Como morador do condomínio, quero me identificar pelo meu apartamento e agendar um horário de 1 hora na academia (recebendo confirmação por e-mail) para garantir minha vaga no espaço.
