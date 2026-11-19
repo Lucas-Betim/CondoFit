@@ -19,7 +19,7 @@ A tabela apresenta os documentos do E10 na estrutura adotada para o projeto. A a
 1. Forneço a história aprovada, seus RF/RNF, os critérios de aceitação e os limites da tarefa.
 2. O implementador trabalha em uma história, verifica os critérios e informa os resultados reais.
 3. O revisor analisa o diff e as evidências, apontando desvios sem alterar arquivos.
-4. O revisor humano do PR avalia o parecer, solicita correções e decide sobre a integração. O agente não faz merge.
+4. O revisor humano do PR avalia o parecer, solicita correções e decide sobre a aprovação. Após a aprovação, o autor humano do PR realiza a integração e responde pelo código integrado. O revisor responde pela qualidade da revisão. O agente não faz merge.
 
 Executar os papéis em etapas separadas. Não iniciar subagentes automaticamente. Nesta entrega parcial, o foco continua sendo planejamento; a existência das configurações não autoriza gerar o backend.
 

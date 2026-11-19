@@ -18,3 +18,5 @@
 **Quem responde pelo código integrado:** seção "Critério de conclusão e responsabilidade" do [AGENTS.md](AGENTS.md#critério-de-conclusão-e-responsabilidade). 
 
 **Entrega do arquiteto técnico:** [docs/entrega-arquiteto.md](docs/entrega-arquiteto.md).
+
+**Revisão humana da entrega:** [docs/registro-revisao-humana.md](docs/registro-revisao-humana.md).

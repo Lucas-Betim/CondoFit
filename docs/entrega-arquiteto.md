@@ -25,7 +25,7 @@ Apresento nesta contribuição os entregáveis E6 e E10, os requisitos não func
 - Apartamentos diferentes podem reservar o mesmo período; não há limite de pessoas por horário.
 - Confirmação da reserva no banco antes da solicitação do e-mail; falha de envio mantém a reserva válida e é registrada.
 - Testes unitários isolados e verificação de concorrência com PostgreSQL.
-- Revisão humana obrigatória; quem aprova e integra o PR responde pelo código integrado.
+- Revisão humana obrigatória. O autor humano do PR responde pelo código integrado, inclusive quando há apoio de IA. O revisor humano responde pela qualidade da revisão.
 
 ## Escopo e formato de entrega
 

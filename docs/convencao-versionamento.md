@@ -30,5 +30,7 @@
 - Nenhum outro PR é integrado até a `main` voltar a passar.
 
 ## Responsabilidade
-- Quem aprova e integra o PR responde pelo código integrado, não o agente.
+- O autor humano do PR responde pelo código integrado, inclusive quando há apoio de IA. O revisor humano responde pela qualidade da revisão.
+- O autor do PR realiza a integração somente após aprovação de outro integrante. Agentes de IA não aprovam nem integram alterações e não assumem responsabilidade pelo código.
 - Detalhes em [AGENTS.md](../AGENTS.md#critério-de-conclusão-e-responsabilidade).
+- A revisão da entrega parcial está documentada no [Registro de revisão humana](registro-revisao-humana.md).

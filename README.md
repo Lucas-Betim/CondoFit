@@ -6,6 +6,7 @@ Projeto final de Engenharia de Software.
 
 - [Plano de Testes](docs/plano-de-teste.md)
 - [Backlog do Projeto](specs/backlog.md)
+- [Registro de revisão humana da entrega](docs/registro-revisao-humana.md)
 
 ## Equipe
 

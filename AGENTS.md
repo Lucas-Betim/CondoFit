@@ -41,7 +41,7 @@ O primeiro comando compila bytecode; não gera um pacote de distribuição. Os c
 
 Uma história por sessão, com critérios definidos por pessoas. Para o item escolhido para TDD, registrar a falha esperada antes de implementar, então implementar e refatorar com testes passando. Ao concluir, informar mudanças, critérios atendidos, comandos e resultados reais, limitações e uso de IA.
 
-Responsabilidade pelo código integrado: quem aprova e integra o PR assume a responsabilidade pelo código integrado, após revisão humana; agentes sugerem alterações e emitem pareceres, sem aprovar ou realizar merges.
+Responsabilidade pelo código integrado: O autor humano do PR responde pelo código integrado, inclusive quando há apoio de IA. O revisor humano responde pela qualidade da revisão. O autor do PR realiza a integração somente após aprovação de outro integrante. Agentes sugerem alterações e emitem pareceres, sem aprovar ou realizar merges.
 
 O responsável humano deve ser identificado em cada PR. Não fazer commit, push, merge, deploy ou chamadas reais de e-mail sem solicitação explícita. A branch de entrega é `entrega-parcial-01`.
 
