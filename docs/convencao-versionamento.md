@@ -1,7 +1,7 @@
 # Convenção de versionamento
 
 ## 1. Repositório
-- GitHub: [CondoFit](https://github.com/Lucas-Betim/CondoFit); todos com escrita; .
+- GitHub: [CondoFit](https://github.com/Lucas-Betim/CondoFit); todos os integrantes com permissão de escrita; .
 - `main` é a mainline e deve estar sempre passando no CI.
 
 ## 2. Branches
