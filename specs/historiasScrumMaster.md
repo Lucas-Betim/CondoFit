@@ -1,6 +1,6 @@
 # Histórias de usuário - Scrum master
 
-Autor: Rafael - Scrum master. Status: **Aprovadas em /11/2026**.
+Autor: Rafael - Scrum master. Status: **Aprovadas em 19/11/2026**.
 
 Utilizo os identificadores HU-ARQ para relacionar cada história aos fluxos, às regras de negócio e aos requisitos não funcionais de arquitetura. Este documento descreve as histórias; a priorização pertence ao backlog.
 
