@@ -22,7 +22,7 @@ Sistema de reserva da academia de um condomínio.
 
 ### Cobertura das habilidades
 
-O grupo cobre as quatro frentes: negociar com o cliente (Gabriela), programar e decidir a arquitetura (Lucas), testar (Lavínia) e documentar (Rafael).
+O grupo cobre as quatro frentes: negociar com o cliente (Gabriela, Lucas Claro), programar e decidir a arquitetura (Lucas), testar (Lavínia) e documentar (Rafael).
 
 ## Tema e escopo
 
