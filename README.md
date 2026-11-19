@@ -7,7 +7,7 @@ Sistema de reserva da academia de um condomínio.
 | Nome completo | GitHub | Papel | Perfil |
 |---------------|--------|-------|--------|
 | Gabriela Slonik da Silva | @Gabriela-SS | Product Owner | Convive com o problema do condomínio e conhece as necessidades dos moradores |
-| Lucas Claro | @lucasclaro267 | Product Owner | Contribui na definição e priorização dos requisitos junto com a Gabriela |
+| Lucas Claro de Melo Almeida | @lucasclaro267 | Product Owner | Contribui na definição e priorização dos requisitos junto com a Gabriela |
 | Rafael Schultz Drzevieski | @Schultz126 | Scrum Master | Facilita o processo, acompanha os prazos e organiza a entrega |
 | Lucas Betim Nobre de Oliveira | @Lucas-Betim | Arquiteto técnico | Familiaridade com agentes de IA e banco de dados; assinatura Plus do Codex |
 | Lavínia Borges da Silva | @Lavinia-tech | Qualidade / testes | Responsável pelos critérios de aceitação, pelos testes e pela revisão da qualidade |
