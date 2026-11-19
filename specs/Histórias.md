@@ -1,42 +1,40 @@
 # Histórias de usuário - Product Owner
 
-Autora: Gabriela - Product Owner. Status: Aprovadas em 18/11/2026.
-
-Utilizo os identificadores HU-PO para relacionar cada história às necessidades de negócio dos moradores e às regras de uso do espaço. Este documento descreve as histórias; a priorização pertence ao backlog.
+Autora: Gabriela - Product Owner. Status: **Aprovadas em 18/11/2026**.
 
 ## HU-PO-01: Reservar horário na academia
-Como morador do condomínio, quero agendar um horário de uso da academia para garantir minha vaga e evitar superlotação no espaço.
+Como morador do condomínio, quero me identificar pelo meu apartamento e agendar um horário de 1 hora na academia (recebendo confirmação por e-mail) para garantir minha vaga no espaço.
 
-**Fluxo principal:** O morador acessa o sistema, escolhe uma data futura e um horário disponível, informa o número do seu apartamento e confirma o agendamento. O sistema registra a reserva como ativa e exibe a confirmação com os dados do agendamento.
+**Fluxo principal:** o morador informa seu apartamento, escolhe uma data futura e um horário disponível, e confirma o agendamento com duração fixa de 1 hora. O sistema valida se o apartamento não possui outra reserva ativa no mesmo dia e se há vaga disponível no horário, registra a reserva como `ativa` e envia confirmação por e-mail.
 
-**Fluxos alternativos:** se o horário desejado já estiver ocupado por outra reserva ativa ou bloqueado para manutenção, o sistema impede o agendamento e informa a indisponibilidade. Se o morador tentar agendar em uma data passada ou fora do horário de funcionamento da academia, o sistema recusa a operação e orienta sobre os horários permitidos.
+**Fluxos alternativos:** se o apartamento já possuir uma reserva ativa naquela mesma data, o sistema impede o novo agendamento. Se o horário desejado estiver bloqueado para manutenção ou com lotação máxima atingida, o sistema informa a indisponibilidade. Se o morador tentar agendar em data passada ou fora do horário de funcionamento, o sistema recusa a operação.
 
 **Critérios de aceitação:**
-1. Permitir criar reserva informando data, horário de início, horário de término e identificador do apartamento.
-2. Impedir reservas em datas passadas ou com horário final anterior ou igual ao inicial.
-3. Bloquear agendamentos caso exista conflito de horário com outra reserva ativa ou com um período de manutenção registrado.
-4. Registrar a nova reserva com o status inicial "ativa" e retornar um comprovante/identificador da reserva.
-5. Garantir que o agendamento respeite a janela de funcionamento configurada para a academia (ex.: 06h às 22h).
+1. Exigir identificação/vínculo válido com o apartamento do morador.
+2. Definir duração fixa de 1 hora por reserva.
+3. Permitir no máximo 1 reserva ativa por apartamento por dia, permitindo que apartamentos diferentes reservem o mesmo horário dentro da capacidade do espaço.
+4. Bloquear agendamentos em períodos de manutenção, datas passadas ou horários lotados.
+5. Registrar a reserva com status `ativa` e enviar confirmação por e-mail ao morador.
 
-**Referências:** RN-NEG-01 (regras de agendamento), RF-01 e integração com validação de disponibilidade definida na camada de serviços.
+**Referências:** RF-01, RF-02, RF-04 e camada de serviços (ADR-001).
 
 ---
 
-## HU-PO-02: Cancelar própria reserva
-Como morador do condomínio, quero cancelar uma reserva ativa que fiz anteriormente para liberar o horário a outros moradores caso eu não possa comparecer.
+## HU-PO-02: Cancelar própria reserva e permitir remarcação
+Como morador do condomínio, quero cancelar uma reserva ativa do meu apartamento para liberar a vaga e poder remarcar outro horário no mesmo dia, se necessário.
 
-**Fluxo principal:** o morador localiza sua reserva ativa (por identificador ou apartamento/data), solicita o cancelamento e confirma a ação. O sistema altera o status da reserva para "cancelada" e libera imediatamente a faixa de horário para novos agendamentos.
+**Fluxo principal:** o morador identifica seu apartamento e localiza sua reserva ativa, solicita o cancelamento e confirma a ação. O sistema altera o status da reserva para `cancelada`, envia e-mail de confirmação do cancelamento e libera imediatamente o apartamento para realizar uma nova reserva no mesmo dia.
 
-**Fluxos alternativos:** se a reserva já estiver cancelada ou se o horário da reserva já tiver passado, o sistema informa que o cancelamento não é permitido. Se o identificador informado não existir, o sistema exibe mensagem de reserva não encontrada.
+**Fluxos alternativos:** se a reserva já estiver cancelada ou se o horário da reserva já tiver passado, o sistema informa que o cancelamento não é permitido.
 
 **Critérios de aceitação:**
-1. Permitir alterar o status de uma reserva "ativa" para "cancelada".
-2. Liberar imediatamente o horário correspondente para que outros moradores possam reservá-lo.
-3. Manter o registro da reserva cancelada no banco/histórico para fins de auditoria e consulta administrativa (sem excluí-la fisicamente).
-4. Impedir o cancelamento de reservas já encerradas (data/hora no passado) ou já canceladas anteriormente.
-5. Solicitar confirmação antes de efetivar o cancelamento.
+1. Permitir alterar o status de uma reserva `ativa` para `cancelada` mediante confirmação.
+2. Liberar imediatamente a vaga no horário e habilitar o apartamento para realizar uma nova reserva (remarcação) no mesmo dia.
+3. Manter o registro da reserva cancelada no histórico para auditoria e consulta administrativa (sem exclusão física).
+4. Impedir o cancelamento de reservas passadas ou já canceladas.
+5. Enviar confirmação do cancelamento por e-mail.
 
-**Referências:** RF-02, requisito de integridade histórica (RN-ARQ-05) e fluxo de consulta administrativa por data.
+**Referências:** RF-01, RF-03, RF-04 e requisito de integridade histórica (RNF-02).
 
 ---
 
@@ -72,4 +70,4 @@ Critérios de aceitação:
 4. Informar ao administrador quando já existirem reservas no período solicitado, sem cancelá-las automaticamente.
 5. Permitir consultar os bloqueios registrados, identificando suas datas, horários e motivos.
 
-**Referências:** Funcionalidade proposta a partir das referências visuais de sistemas de gestão e agendamento enviadas (Field Control, Trengo e Fitness Booking). A arquitetura atual não define bloqueios de manutenção; a regra precisa ser incorporada à especificação de negócio e validada pelo arquiteto.
+**Referências:** RF-06 e regras de negócio de indisponibilidade incorporadas à especificação e à arquitetura do sistema (ADR-001).
