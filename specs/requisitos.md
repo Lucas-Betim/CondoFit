@@ -1,6 +1,6 @@
 # Especificação de Requisitos — CondoFit
 
-Autora: Gabriela - Product Owner  
+Autores: Gabriela, Lucas Claro - Product Owner  
 Data: 18/11/2026
 
 ---
