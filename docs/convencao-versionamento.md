@@ -26,7 +26,7 @@
 - Conflito não trivial: resolver junto com quem mexeu no trecho.
 
 ## Se o build quebrar na mainline
-- "Nunca quebre a construção." Quem fez o último merge reverte ou corrige em até [prazo].
+- "Nunca quebre a construção." Quem fez o último merge reverte ou corrige em até 24 horas.
 - Nenhum outro PR é integrado até a `main` voltar a passar.
 
 ## Responsabilidade
