@@ -13,6 +13,8 @@
 | E9  | Convenção de versionamento    | [docs/convencao-versionamento.md](docs/convencao-versionamento.md) |
 | E10 | Configuração dos agentes      | [AGENTS.md](AGENTS.md), [implementador](.codex/agents/implementador.toml), [revisor](.codex/agents/revisor.toml) e [uso do Codex](docs/uso-codex.md) |
 
-**Quem responde pelo código integrado:** seção "Critério de conclusão e responsabilidade" do [AGENTS.md](AGENTS.md#critério-de-conclusão-e-responsabilidade).
+**Histórias de usuário:** [specs/Histórias.md](specs/Histórias.md), [specs/historias.md](specs/historias.md), [specs/historias-arquiteto](specs/historias-arquiteto) e [specs/historiasScrumMaster](specs/historiasScrumMaster)
+
+**Quem responde pelo código integrado:** seção "Critério de conclusão e responsabilidade" do [AGENTS.md](AGENTS.md#critério-de-conclusão-e-responsabilidade). 
 
 **Entrega do arquiteto técnico:** [docs/entrega-arquiteto.md](docs/entrega-arquiteto.md).
